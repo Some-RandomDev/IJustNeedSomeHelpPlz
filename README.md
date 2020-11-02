@@ -1,0 +1,3 @@
+# IJustNeedSomeHelpPlz
+This is for only one person to see...
+So... basically, I was making a battle royale sort of crap... I wrote some code... voila! I can't render another frame WHATSOEVER Help me plz
