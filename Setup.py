@@ -10,14 +10,17 @@ maxcannoncapacity = 30
 
 
 def left():
+    global newheading
     newheading = heading - 5
 
 
 def right():
-     newheading = heading + 5
+    global newheading
+    newheading = heading + 5
 
 
 def refresh_heading():
+    global heading
     heading = newheading
 
 
@@ -144,13 +147,7 @@ def draw_CannonCount():
 
 def press_loop():
     t. onkey(left, "A")
+    t. onkey(left, "a")
     t. onkey(right, "D")
+    t. onkey(right, "d")
     t. listen()
-
-
-Create_screen()
-Draw_player()
-draw_compass()
-draw_health()
-draw_CannonCount()
-t. done()
