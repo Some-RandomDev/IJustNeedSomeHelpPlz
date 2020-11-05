@@ -4,20 +4,23 @@ t = turtle
 health = 200
 initial_heading = 90
 heading = initial_heading
-newheading = 90
-cannoncount = 30
-maxcannoncapacity = 30
+new_heading = 90
+cannon_count = 30
+max_cannon_capacity = 30
 
 
 def left():
+    global newheading
     newheading = heading - 5
 
 
 def right():
-     newheading = heading + 5
+    global newheading
+    newheading = heading + 5
 
 
 def refresh_heading():
+    global heading
     heading = newheading
 
 
@@ -139,7 +142,7 @@ def draw_CannonCount():
     t. fd(20)
     t. penup()
     t. goto(180, 210)
-    t. write(cannoncount, font= ("Arial", 24, "normal"))
+    t. write(cannon_count, font= ("Arial", 24, "normal"))
 
 
 def press_loop():
@@ -148,9 +151,4 @@ def press_loop():
     t. listen()
 
 
-Create_screen()
-Draw_player()
-draw_compass()
-draw_health()
-draw_CannonCount()
 t. done()
