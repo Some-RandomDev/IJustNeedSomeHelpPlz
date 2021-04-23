@@ -1,3 +1,5 @@
+print("Use rewritten_code.py")
+'''
 import Setup
 Setup. Create_screen()
 while True:
@@ -10,3 +12,4 @@ while True:
     Setup. refresh_heading()
     Setup. t. clear()
     Setup. t. done()
+'''
