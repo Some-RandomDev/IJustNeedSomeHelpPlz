@@ -1,3 +1,5 @@
+print("Use rewritten_code.py")
+'''
 import turtle
 
 t = turtle
@@ -152,3 +154,4 @@ def press_loop():
 
 
 t. done()
+'''
